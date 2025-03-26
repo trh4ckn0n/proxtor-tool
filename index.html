@@ -85,6 +85,22 @@
             transform: scale(1.1);
         }
 
+        .dns-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dns-image {
+            border: 3px solid #ff6600;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #ff6600;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .dns-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 25px #ff3300;
+        }
         .footer {
             text-align: center;
             margin-top: 30px;
@@ -113,6 +129,12 @@
     <a href="https://github.com/trh4ckn0n/proxtor-tool/releases/download/exe/proxtor.zip" class="button">
         🔥 Télécharger Proxtor 🔥
     </a>
+
+    <h1>🔎 Liste des Principaux DNS</h1>
+
+    <div class="dns-container">
+        <img class="dns-image" src="https://trh4ckn0n.github.io/proxtor-tool/" alt="Principaux DNS" width="600">
+    </div>
 
     <h2>📜 Commandes d'installation :</h2>
     <pre>
