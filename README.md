@@ -9,6 +9,9 @@
 Proxtor est un outil de sécurisation pour Kali Linux qui permet de configurer rapidement des paramètres de sécurité comme les DNS, VPN, Proxy et Tor. Il vous aide à sécuriser votre machine et à masquer votre identité en ligne.
 
 ## Fonctionnalités
+### DNS
+
+[![Proxtor Tool](https://github.com/trh4ckn0n/proxtor-tool/blob/main/FB_IMG_1742965517837.jpg)](https://trh4ckn0n.github.io/proxtor-tool/)
 
 - Changer les DNS
 - Configurer un VPN
