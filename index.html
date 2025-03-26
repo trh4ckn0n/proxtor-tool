@@ -6,94 +6,147 @@
     <title>Proxtor - Outil de Sécurisation de Kali Linux</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: #fff;
+            font-family: "Courier New", monospace;
+            background-color: #111;
+            color: #00ff00;
             margin: 0;
             padding: 20px;
+            text-shadow: 0 0 5px #00ff00;
         }
+
+        h1, h2 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
         h1 {
-            color: #1aff1a;
+            color: #ff0000;
+            text-shadow: 0 0 8px #ff0000;
         }
+
         h2 {
-            color: #ff6600;
+            color: #00ffff;
+            text-shadow: 0 0 8px #00ffff;
         }
+
         p {
             line-height: 1.6;
+            text-align: center;
         }
+
+        pre {
+            background: #222;
+            padding: 10px;
+            border-radius: 5px;
+            color: #ffcc00;
+            box-shadow: 0 0 5px #ffcc00;
+            overflow-x: auto;
+        }
+
         code {
             background-color: #333;
             padding: 5px 10px;
             border-radius: 5px;
+            color: #ffcc00;
+            text-shadow: 0 0 5px #ffcc00;
         }
+
+        .button {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(45deg, #ff0000, #ff6600);
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ff0000;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #ff6600;
+        }
+
         .demo-section {
-    text-align: center;
-    margin: 20px 0;
-}
+            text-align: center;
+            margin: 20px 0;
+        }
 
-.demo-section h2 {
-    color: #00ffcc; /* Fluo hacker style */
-}
+        .demo-section a img {
+            transition: transform 0.3s ease-in-out;
+        }
 
-.demo-section a img {
-    transition: transform 0.3s ease-in-out;
-}
+        .demo-section a:hover img {
+            transform: scale(1.1);
+        }
 
-.demo-section a:hover img {
-    transform: scale(1.1);
-}
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            border-top: 2px solid #ff0000;
+            color: #ff0000;
+        }
+
+        .footer a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-shadow: 0 0 10px #00ffff;
+        }
     </style>
 </head>
 <body>
+
     <h1>Proxtor - Outil de Sécurisation de Kali Linux</h1>
-    <p>Bienvenue sur la page de présentation de l'outil <strong>Proxtor</strong> ! Cet outil permet de sécuriser votre Kali Linux en configurant différents services comme le DNS, le VPN, le proxy, et Tor.</p>
-    
-    <h2>Fonctionnalités de l'outil :</h2>
-    <ul>
-        <li><strong>Changer les DNS</strong> : Sélectionnez un serveur DNS rapide et sécurisé comme Google, Cloudflare, ou un DNS personnalisé.</li>
-        <li><strong>Configurer un VPN</strong> : Connectez-vous à un VPN pour sécuriser votre connexion Internet.</li>
-        <li><strong>Configurer un Proxy</strong> : Utilisez un proxy pour masquer votre adresse IP.</li>
-        <li><strong>Configurer Tor</strong> : Utilisez Tor pour anonymiser vos connexions en ligne.</li>
-    </ul>
+    <p>Développé par <strong>trhacknon</strong> - Un outil pour sécuriser Kali Linux via DNS, VPN, proxy et Tor.</p>
 
-    <h2>Comment utiliser l'outil :</h2>
-    <p>Pour utiliser cet outil, vous pouvez le télécharger directement en une commande avec l'une des méthodes suivantes :</p>
+    <h2>📥 Télécharger le Binaire</h2>
+    <a href="https://github.com/trh4ckn0n/proxtor-tool/releases/download/exe/proxtor.zip" class="button">
+        🔥 Télécharger Proxtor 🔥
+    </a>
+
+    <h2>📜 Commandes d'installation :</h2>
     <pre>
-        curl -s https://gist.githubusercontent.com/trh4ckn0n/a8e71e57d1e7ee42013f1713ac1a5ac8/raw/dc19399c6875d871bc6f395aafa3670f4dca86de/proxtor.py | python3
+curl -s https://gist.githubusercontent.com/trh4ckn0n/a8e71e57d1e7ee42013f1713ac1a5ac8/raw/proxtor.py | python3
     </pre>
-    <p>Ou bien, vous pouvez utiliser <code>wget</code> de la manière suivante :</p>
     <pre>
-        wget -qO- https://gist.githubusercontent.com/trh4ckn0n/a8e71e57d1e7ee42013f1713ac1a5ac8/raw/dc19399c6875d871bc6f395aafa3670f4dca86de/proxtor.py | python3
+wget -qO- https://gist.githubusercontent.com/trh4ckn0n/a8e71e57d1e7ee42013f1713ac1a5ac8/raw/proxtor.py | python3
     </pre>
 
-    <h2>utilisation exe</h2>
+    <h2>⚡ Exécutable pour Windows/Linux :</h2>
     <pre>
-        wget https://github.com/trh4ckn0n/proxtor-tool/releases/download/exe/proxtor.zip && unzip proxtor.zip
+wget https://github.com/trh4ckn0n/proxtor-tool/releases/download/exe/proxtor.zip && unzip proxtor.zip
     </pre>
     <pre>
-        ./dist/proxtor.bin
-    </pre>
-    
-<div class="demo-section">
-    <h2>🚀 Demo</h2>
-    <p>
-        <a href="https://github.com/trh4ckn0n/proxtor-tool/" target="_blank">
-            <img src="https://img.shields.io/badge/🔒%20Proxtor-Sécurise%20Kali%20Linux-blue?style=for-the-badge" alt="Proxtor Tool">
-        </a>
-    </p>
-</div>
-    
-    <h2>Incorporation du script dans une page Web :</h2>
-    <p>Vous pouvez également inclure le script dans une page web avec la balise suivante :</p>
-    <pre>
-        &lt;script src="https://gist.github.com/trh4ckn0n/a8e71e57d1e7ee42013f1713ac1a5ac8.js"&gt;&lt;/script&gt;
+./dist/proxtor.bin
     </pre>
 
-    <h2>Remarques :</h2>
-    <p>Assurez-vous que vous avez les permissions nécessaires pour effectuer ces modifications sur votre système. Utilisez ce script de manière responsable.</p>
-<script src="https://gist.github.com/trh4ckn0n/a8e71e57d1e7ee42013f1713ac1a5ac8.js"></script>
-    <footer>
-        <p>Développé par <strong>trhacknon</strong> - <a href="https://github.com/trh4ckn0n" target="_blank">Voir le code source</a></p>
-    </footer>
+    <div class="demo-section">
+        <h2>🚀 Demo</h2>
+        <p>
+            <a href="https://github.com/trh4ckn0n/proxtor-tool/" target="_blank">
+                <img src="https://img.shields.io/badge/🔒%20Proxtor-Sécurise%20Kali%20Linux-blue?style=for-the-badge" alt="Proxtor Tool">
+            </a>
+        </p>
+    </div>
+
+    <h2>📌 Script embarqué :</h2>
+    <pre>
+&lt;script src="https://gist.github.com/trh4ckn0n/a8e71e57d1e7ee42013f1713ac1a5ac8.js"&gt;&lt;/script&gt;
+    </pre>
+
+    <div class="footer">
+        <p>💀 Codé par <strong>trhacknon</strong> - <a href="https://github.com/trh4ckn0n" target="_blank">Voir le code source</a></p>
+    </div>
+
 </body>
 </html>
